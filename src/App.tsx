@@ -1,4 +1,4 @@
-import './App.css';
+import '../src/styles/App.scss';
 import 'firebase/firestore';
 import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -18,7 +18,8 @@ function App() {
         <h3>Realtime Chat with Typescript</h3>
       </header>
       <section>
-        {user ? <Chatroom/> : <SignIn/>}
+        {/* {user ? <Chatroom/> : <SignIn/>} */}
+        <Chatroom/>
       </section>
     </div>
   );
