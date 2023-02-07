@@ -1,5 +1,5 @@
-import './Chatroom.scss';
 import 'firebase/firestore';
+import '../styles/styles.scss'
 
 export const Chatroom = () => {
 
@@ -13,7 +13,7 @@ export const Chatroom = () => {
                 <h1>Name</h1>
                 <h2>Argentina</h2>
                 <figure className="avatar">
-                    <img/>
+                    <img alt='img'/>
                 </figure>
             </div>
             <div className="messages">

@@ -1,11 +1,10 @@
-import '../src/styles/App.scss';
 import 'firebase/firestore';
 import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 // import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { auth } from './firebase.config';
-import { Chatroom } from './components/Chatroom';
-import { SignIn } from './components/SignIn';
+import { SignIn } from './pages/SignIn';
+import Home from './pages/Home';
 
 
 function App() {
@@ -15,11 +14,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h3>Realtime Chat with Typescript</h3>
       </header>
       <section>
         {/* {user ? <Chatroom/> : <SignIn/>} */}
-        <Chatroom/>
+        <Home/>
       </section>
     </div>
   );

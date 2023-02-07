@@ -1,8 +1,7 @@
-import React from "react";
 import { provider } from "../firebase.config";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase.config";
-import './SignIn.scss';
+import '../styles/styles.scss';
 
 export const SignIn = () => {
 
